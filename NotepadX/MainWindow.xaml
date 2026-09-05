@@ -49,23 +49,23 @@
                 <Button x:Name="ThemeButton" Style="{StaticResource WindowButton}" Click="Theme_Click" ToolTip="Переключить тему">
                     <Grid>
                         <Path x:Name="SunIcon" Data="M8 8 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M8 1 V3 M8 13 V15 M1 8 H3 M13 8 H15 M3 3 L4.5 4.5 M13 3 L11.5 4.5 M3 13 L4.5 11.5 M13 13 L11.5 11.5"
-                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeLineCap="Round" Visibility="Collapsed"/>
+                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" Visibility="Collapsed"/>
                         <Path x:Name="MoonIcon" Data="M11 3 a5 5 0 1 0 3 8 a6 6 0 0 1 -3 -8"
-                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeLineCap="Round"/>
+                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                     </Grid>
                 </Button>
                 <Button x:Name="FullscreenButton" Style="{StaticResource WindowButton}" Click="Fullscreen_Click" ToolTip="Полный экран (F11)">
                     <Path Data="M2 5 V2 H5 M11 2 H14 V5 M14 11 V14 H11 M5 14 H2 V11"
-                          Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeLineCap="Round"/>
+                          Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                 </Button>
                 <Button x:Name="MinButton" Style="{StaticResource WindowButton}" Click="Min_Click" ToolTip="Свернуть">
-                    <Path Data="M3 8 H13" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeLineCap="Round"/>
+                    <Path Data="M3 8 H13" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                 </Button>
                 <Button x:Name="MaxButton" Style="{StaticResource WindowButton}" Click="Max_Click" ToolTip="Развернуть">
-                    <Path Data="M3 4 H13 V13 H3 Z" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeLineCap="Round"/>
+                    <Path Data="M3 4 H13 V13 H3 Z" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                 </Button>
                 <Button x:Name="CloseButton" Style="{StaticResource CloseWindowButton}" Click="Close_Click" ToolTip="Закрыть">
-                    <Path Data="M4 4 L12 12 M12 4 L4 12" Stroke="White" StrokeThickness="1.2" StrokeLineCap="Round"/>
+                    <Path Data="M4 4 L12 12 M12 4 L4 12" Stroke="White" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                 </Button>
             </StackPanel>
         </Grid>
@@ -76,33 +76,33 @@
                 <StackPanel Orientation="Horizontal" Margin="8,0">
 
                     <Button Style="{StaticResource ToolButton}" Click="New_Click" ToolTip="Новый файл (Ctrl+N)">
-                        <Path Data="M8 2 V14 M2 8 H14" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeLineCap="Round"/>
+                        <Path Data="M8 2 V14 M2 8 H14" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                     </Button>
 
                     <Button Style="{StaticResource ToolButton}" Click="Open_Click" ToolTip="Открыть (Ctrl+O)">
-                        <Path Data="M2 4 H6 L8 6 H14 V12 H2 Z" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+                        <Path Data="M2 4 H6 L8 6 H14 V12 H2 Z" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round"/>
                     </Button>
 
                     <Button Style="{StaticResource ToolButton}" Click="Save_Click" ToolTip="Сохранить (Ctrl+S)">
                         <Path Data="M3 3 H12 L14 5 V13 H3 Z M6 3 V7 H11 V3 M6 10 H11 V13 H6 Z"
-                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round"/>
                     </Button>
 
                     <Button Style="{StaticResource ToolButton}" Click="SaveAs_Click" ToolTip="Сохранить как (Ctrl+Shift+S)">
                         <Path Data="M3 3 H12 L14 5 V13 H3 Z M6 3 V7 H11 V3 M6 10 H11 V13 H6 Z M11 9 L13 11 M13 11 V8"
-                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round"/>
                     </Button>
 
                     <Rectangle Width="1" Height="20" Fill="{DynamicResource BorderBrush}" Margin="6,0"/>
 
                     <Button Style="{StaticResource ToolButton}" Click="Find_Click" ToolTip="Найти и заменить (Ctrl+F)">
                         <Path Data="M7 7 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M10.5 10.5 L14 14"
-                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeLineCap="Round"/>
+                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                     </Button>
 
                     <Button Style="{StaticResource ToolButton}" Click="WordWrap_Click" ToolTip="Перенос строк">
                         <Path Data="M2 4 H13 M2 8 H10 L13 8 M13 8 L11 6 M13 8 L11 10 M2 12 H8"
-                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+                              Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.4" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round"/>
                     </Button>
 
                     <Rectangle Width="1" Height="20" Fill="{DynamicResource BorderBrush}" Margin="6,0"/>
@@ -155,7 +155,7 @@
                     <CheckBox x:Name="CaseCheckBox" Content="Регистр" Foreground="{DynamicResource TextSecondaryBrush}" Margin="12,0,0,0" VerticalAlignment="Center"/>
                     <CheckBox x:Name="WordCheckBox" Content="Слово целиком" Foreground="{DynamicResource TextSecondaryBrush}" Margin="12,0,0,0" VerticalAlignment="Center"/>
                     <Button Style="{StaticResource ToolButton}" Click="CloseSearch_Click" Margin="8,0,0,0">
-                        <Path Data="M4 4 L12 12 M12 4 L4 12" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeLineCap="Round"/>
+                        <Path Data="M4 4 L12 12 M12 4 L4 12" Stroke="{DynamicResource TextPrimaryBrush}" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round"/>
                     </Button>
                 </StackPanel>
             </Border>
